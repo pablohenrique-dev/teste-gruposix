@@ -102,7 +102,7 @@ export function TestimonialSection() {
                 alt={`Foto de perfil de ${testimonial.person.name}`}
                 width={56}
                 height={56}
-                className="rounded-full"
+                className="h-14 w-14 shrink-0 rounded-full object-cover"
               />
 
               <div>
