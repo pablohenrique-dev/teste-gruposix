@@ -10,7 +10,7 @@ export function Footer() {
         <div className="flex flex-col items-center gap-8 md:flex-row">
           <Link href="#">Política de privacidade</Link>
           <span className="hidden md:inline-block">|</span>
-          <Link href="#">Política de privacidade</Link>
+          <Link href="#">Termos de uso </Link>
         </div>
       </section>
     </footer>
