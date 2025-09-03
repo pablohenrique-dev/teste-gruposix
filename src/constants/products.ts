@@ -3,7 +3,7 @@ type PaymentOption = {
   installments?: number; // só se for cartão
 };
 
-type Product = {
+export type Product = {
   id: string;
   name: string;
   slug: string;
@@ -27,7 +27,8 @@ export const products: Product[] = [
       "Auxilia na regulação intestinal e desintoxicação.",
       "Aumenta disposição e energia no dia a dia.",
     ],
-    image: "/images/garrafa-verde-de-pilulas-isolada-sobre-um-fundo-branco.png",
+    image:
+      "/images/garrafa-verde-de-pilulas-isolada-sobre-um-fundo-branco.webp",
     price: 129.9,
     paymentOptions: [
       { type: "pix" },
@@ -47,7 +48,7 @@ export const products: Product[] = [
       "Combate sinais de envelhecimento precoce.",
       "Resultados visíveis a partir de 30 dias de uso contínuo.",
     ],
-    image: "/images/frasco-de-suplemento-castanho-com-uma-tampa-verde.png",
+    image: "/images/frasco-de-suplemento-castanho-com-uma-tampa-verde.webp",
     price: 159.9,
     paymentOptions: [{ type: "pix" }, { type: "cartao", installments: 6 }],
   },

@@ -4,7 +4,11 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
-export function ProoductsSection() {
+interface ProductsSectionProps {
+  queryString: string;
+}
+
+export function ProductsSection({ queryString }: ProductsSectionProps) {
   return (
     <section id="produtos" className="container mb-20 h-fit">
       <h2 className="mb-4 text-center text-3xl font-semibold sm:text-4xl">
@@ -37,7 +41,7 @@ export function ProoductsSection() {
             <div
               key={id}
               className={cn(
-                "border-custom-gray-200 hover:border-secondary sticky top-10 flex w-full flex-col items-center gap-12 rounded-lg border bg-white p-6 transition-all md:p-14 lg:flex-row",
+                "border-custom-gray-200 hover:border-secondary flex w-full flex-col items-center gap-12 rounded-lg border bg-white p-6 transition-all md:p-14 lg:flex-row",
                 index === products.length - 1 && "mt-10",
               )}
             >
@@ -94,9 +98,11 @@ export function ProoductsSection() {
                   )}
                 </div>
                 <Link
-                  href={`/produto/checkout/${slug}`}
-                  className="bg-primary mx-auto block w-full rounded-md px-10 py-3 text-center text-lg font-semibold text-white lg:mx-0 lg:w-fit"
-                >{`Quero meu ${category} agora`}</Link>
+                  className="cta-btn block w-full lg:w-fit"
+                  href={`/produto/checkout/${slug}?${queryString}`}
+                >
+                  {`Quero meu ${category} agora`}
+                </Link>
               </div>
             </div>
           );

@@ -8,11 +8,10 @@ export function Footer() {
           © 2025 <strong>Bem-estar Nutracêuticos</strong>.
         </p>
         <div className="flex flex-col items-center gap-8 md:flex-row">
-          <Link href="/">Política de privacidade</Link>
+          <Link href="#">Política de privacidade</Link>
           <span className="hidden md:inline-block">|</span>
-          <Link href="/">Política de privacidade</Link>
+          <Link href="#">Política de privacidade</Link>
         </div>
-        <Link href="#hero">Voltar ao topo</Link>
       </section>
     </footer>
   );

@@ -1,5 +1,6 @@
 "use client";
 
+import { Hat } from "@/components/hat";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -11,10 +12,7 @@ export function HeroSection() {
       id="hero"
       className="container flex flex-col items-center py-20 pb-16 md:py-24"
     >
-      <div className="border-custom-gray-200 mb-8 flex items-center gap-4 rounded-full border px-4 py-2">
-        <span>🌿</span>
-        <p className="font-semibold">Bem-estar Nutracêuticos</p>
-      </div>
+      <Hat />
       <h1 className="mb-6 text-center text-4xl leading-[130%] font-semibold tracking-tighter md:text-[56px]">
         O segredo natural para transformar seu corpo e autoestima em poucas
         semanas.
@@ -47,6 +45,7 @@ export function HeroSection() {
                 height={36}
                 alt="Ícone em formato de triângulo na cor verde"
                 className="ml-1 aspect-square w-6"
+                priority
               />
             </button>
           </div>
