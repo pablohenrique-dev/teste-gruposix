@@ -10,9 +10,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Bem-estar Nutracêuticos",
+  title: {
+    default: "Bem-estar Nutracêuticos",
+    template: " %s | Bem-estar Nutracêuticos",
+  },
   description:
     "O segredo natural para transformar seu corpo e autoestima em poucas semanas.",
+  icons: {
+    icon: "/icons/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -23,8 +29,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${inter.className} antialiased`}>
-        {children}
-        <Footer />
+        <div className="flex min-h-screen flex-col">
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
