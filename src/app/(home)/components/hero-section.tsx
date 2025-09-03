@@ -25,13 +25,11 @@ export function HeroSection() {
       <div className="w-full md:max-w-[864px]">
         {showVideo ? (
           <iframe
-            // width="864"
-            // height="486"
-            src="https://www.youtube.com/embed/NpEaa2P7qZI"
+            src="https://www.youtube.com/embed/NpEaa2P7qZI?autoplay=1"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            className="aspect-video max-w-[864] rounded-lg"
+            className="aspect-video max-w-[864px] rounded-lg"
           ></iframe>
         ) : (
           <div
