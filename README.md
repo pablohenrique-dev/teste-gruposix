@@ -92,11 +92,11 @@ Para garantir **performance e tempo de carregamento rápido**, foram aplicadas a
 
 #### Mobile
 
-![Alt text](https://github-production-user-asset-6210df.s3.amazonaws.com/118746037/485142611-f6ee4e19-9458-488a-8018-3d0fcc4dffbb.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250903%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250903T134607Z&X-Amz-Expires=300&X-Amz-Signature=e3b245f9293e41e35ae45e8462fd8c62b6cdf66d84bde98d93687e22def4716e&X-Amz-SignedHeaders=host)
+![Imagem de métricas mobile](public/images/lighthouse/lighthouse-mobile.png)
 
 #### Desktop
 
-![Alt text](https://github-production-user-asset-6210df.s3.amazonaws.com/118746037/485146497-12868f9b-486e-4507-b4ae-c990aa4b3d73.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250903%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250903T135132Z&X-Amz-Expires=300&X-Amz-Signature=297c160ec5f8da9571e5139a01e2efee15ae30d4852366dbf8b17fd4742a94c9&X-Amz-SignedHeaders=host)
+![Imagem de métricas desktop](public/images/lighthouse/lighthouse-desktop.png)
 
 ---
 
